@@ -1,20 +1,33 @@
 
+/*AUTOR: KAROL MOISÉS GUTIÉRREZ RÍOS
+    EN AGRADECIMIENTO A DEVF Y PROFESORES POR ESTA EXPERIENCIA.
+    PROFESIONAL EN CODING.
+*/
+
 /* CUERPO PINTEREST*/
+
 body{
+    
     margin: 0px;
-    ;
     
 }
 
 /*HEADER PINTEREST*/
+
 header{    
-   margin: 0px;
+   
+    margin: 0px;
+    width: 100%;
 }
 
+
 /*NAVBAR PINTEREST*/
+
 #nav-bar-pinterest{
+
     width: 100%;
     height: 80px;
+
 }
 
 #nav-bar-pinterest ul{
@@ -25,176 +38,384 @@ header{
     align-items: center;
     justify-content: center;
     height: 80px;
+    flex-wrap: wrap;
        
 }
+
 #nav-bar-pinterest ul li {
+
     list-style: none;
     display: inline;
     padding-right: 20px;
 
 }
+
 /* BOTONES DE HEADER*/
 
-#pinterest-icon a{
-    margin-left: 2px;
-       width: 30px;
-       height: 30px;
-       border-radius: 20px;   
-   }
+#pinterest-icon img{
 
-#pinterest-icon:hover{
-    border: 10px solid rgb(248, 240, 240);
+    margin-left: 2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;   
+
+}
+
+#pinterest-icon img:hover{
+
+    filter: contrast(90%);
+
 }
 
 /*Boton boton Inicio*/
+
 .boton_inicio{
+
     padding: 5px;
     margin-left: 2px;
-    width: 65px;
-    height: 25px;
+    width: 50px;
     background: black;
     border-radius: 20px;
     text-align: center;
+
 }
 
 .boton_inicio a{
+    
     text-decoration: none;
     color: white;
     text-align: center;
+
 }
 
-.boton_inicio:hover{
-    border: 10px solid rgb(248, 240, 240); 
+.boton_inicio a:hover{
+    
+    filter: contrast(90%); 
+
 }
 
 /*Boton hoy*/
+
 .boton_hoy{
+
     margin-left: 2px;
-    width: 60px;
-    height: 25px;
     border-radius: 20px;
+
 }
 
 .boton_hoy a{
+
     text-decoration: none;
     color: black;
     text-align: center;
+
 }
 
-.boton_hoy:hover{
-    border: 10px solid rgb(248, 240, 240);
+.boton_hoy a:hover {
+    
+    text-decoration:underline;
+    
 }
 
 /* Buscador*/
+
 .finder{
+
     margin-left: 2px;
     width: 850px;
     height: 30px;
-    border-radius: 20px;
+    border-radius: 24px;
     border: 1px solid rgb(248, 240, 240);
-    background: rgb(240, 238, 238);
+    /*background: rgb(240, 238, 238);*/
+    /*background-color: rgb(225, 225, 225);*/
+    background-color: #efefef;
+    background-image: url(images/icono1.JPG);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position: 2%;
 
 }
+
+/* Buscador de Pinterest*/
+
 .finder:hover{
-    border: 2px solid rgb(248, 240, 240);
-    background: rgb(190, 186, 186);
+
+    filter: contrast(90%);
+    /*background: rgb(190, 186, 186);*/
+    background-image: url(images/icono1.JPG);
+    position: relative;
+
 }
+
+input::placeholder {
+
+    color: rgb(150, 146, 146);
+    padding-left: 40px;
+
+  }
 
 /* id Notificaciones*/
-#notifications{
+
+#notifications img{
+    
     margin-left: 2px;
-    width: 50px;
-    height: 30px;
     border-radius: 20px;
+
 }
 
 #notifications:hover{
-    border: 10px solid rgb(248, 240, 240);
+
+    filter: contrast(90%);
 }
 
 /* id mensajes*/
-#message{
+#message img{
+
     margin-left: 2px;
-    width: 50px;
-    height: 30px;
     border-radius: 20px;
+
 }
+
 #message:hover{
-    border: 10px solid rgb(248, 240, 240);
+
+    filter: contrast(90%);
+
 }
 
 /*id profile*/
-#profile-img{
+
+#profile-img img{
+
     margin-left: 2px;
     border-radius: 20px;
+
 }
 
 #profile-img:hover{
-    border: 10px solid rgb(248, 240, 240);
+
+    filter: contrast(90%);
+    
 }
 
 /*Boton configuracion*/
-.boton_configuracion{
+
+.boton_configuracion img{
+
     margin-left: 2px;
-    border-radius: 20px;
+    border-radius: 50px;
+
 }
 
 .boton_configuracion:hover{
-    border: 10px solid rgb(248, 240, 240);
+    
+    filter: contrast(90%);
+
 }
 
 
-
-
-
 /*MAIN PINTEREST*/
-.main_pinterest{
-    
+
+#content{
+
+    padding: 1px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(10, auto);
     gap:0;
     justify-content: center;
     justify-items: center;
-    
-    
+    width: 100%;    
 
 }
 
-.main_pinterest div{
-    padding:2px;
-    margin: 2px;
+#content .card-image{
+   
+    padding:5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 250px;
     height: 400px;
-   /* position: relative;
-    overflow: hidden;*/
-    
 
 }
 
+.imagen{
 
+   padding:1px;
+   margin: 1px;
+   width: 246px;
+   height: 396px;
+   border-radius: 25px; 
+    
+}
 
 .card-image{
-    padding:1px;
-    width: 246px;
-    height: 396px;
-    border-radius: 25px; 
-   
-     
+
+    position: relative;
+
 }
 
+/* boton guardar +++++++++++++++++*/
+
+.card-image .boton_imagen{
+    
+    margin: 20px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    display: none;
+    border-radius: 24px;
+    background: rgb(221, 52, 52);
+    color: white;
+    width: 100px;
+    height: 50px;
+
+}
+
+.card-image:hover .boton_imagen{
+
+    display: block;
+}
+
+/* boton enlace ++++++++++++++++++*/
+
+.card-image .boton_enlace{
+    
+    margin: 20px;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    display: none;
+    border-radius: 24px;
+
+}
+
+
+.card-image:hover .boton_enlace{
+    
+    display: block;
+
+}
+
+/* boton pin ++++++++++++++++++++*/
+
+.card-image .pin{
+
+    margin: 20px;
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+    display: none;
+    border-radius: 24px;
+
+}
+
+.card-image:hover .pin{
+    
+    display: block;
+
+}
+
+/* icono pagina ++++++++++++++++*/
+
+.card-image .pagina{
+    
+    margin: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: none;
+    border-radius: 24px;
+
+}
+
+.card-image:hover .pagina{
+    
+    display: block;
+
+}
 
 /* Footer */
 .footer_pinterest{
+
     margin-top: 5px;
     width: 100%;
     height: 40px;
+
 }
 
 .footer_pinterest div h3{
+
     text-align:center;
+
 }
+
+/* MEDIA QUERIES*/
+
+@media screen and (max-width: 600px){
+
+    .header_pinterest{
+
+        width: 100%;
+        height: 80px;
+        margin:  20px;
+        padding: 10px;
+
+    }
+
+    .header_pinterest #nav-bar-pinterest ul li div .finder{
+        
+        display: block;
+        width: 100px;
+
+    }
+
+        body{
+        
+            display: block;
+            width: 100%;
+
+        }
+    
+        #content{
+        
+        display: grid;
+        margin:  20px;
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(10, auto);
+
+        }
+    
+        #content .card-image {
+        
+            width: 180px;
+            height: 250px;    
+            
+        }
+    
+        #content .card-image .imagen{
+    
+        width: 170px;
+        height: 250px;
+        
+    }
+
+
+    .footer_pinterest{
+        
+        display: block;
+        margin-top: 5px;
+        width: 100%;
+        height: 40px;
+
+    }
+ }
+
+
